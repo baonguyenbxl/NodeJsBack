@@ -11,11 +11,11 @@ const app = express();
 const server = http.createServer( app );
 const io = new IOSERVER( server, {
     cors: {
-        origin: "http://51.75.76.143:3000",
+        origin: "http://localhost:3000",
         credentials: false
     }
 } );
-const PORT = 5050, HOST = '51.75.76.143';
+const PORT = 5050, HOST = 'localhost';
 const endpoint = ' https://wax.greymass.com';
 const separateur = ">";
 const interval = 1500;
